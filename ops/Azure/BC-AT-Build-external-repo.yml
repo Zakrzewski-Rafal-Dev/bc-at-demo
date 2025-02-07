@@ -1,0 +1,28 @@
+variables:
+  poolName: blk902001 - Lyreco Agent Pool
+
+resources:
+  repositories:
+    - repository: BrandingConfiguratorAcceptanceTests
+      type: github
+      endpoint: Zakrzewski-Rafal-Dev
+      name: BrandingConfiguratorAcceptanceTests
+      ref: master
+      trigger:
+        branches:
+          include:
+            - master
+
+    - repository: templates
+      type: git
+      name: DevOps/DevOps
+      ref: master
+
+stages:
+  - template: templates/common/buildAcceptanceTests.yml@templates
+    parameters:
+      dotnetVersion: 6.0.406
+      artifactName: AcceptanceTests
+      repositoryName: BrandingConfiguratorAcceptanceTests
+      poolName: $(poolName)
+      buildConfiguration: Release
