@@ -3,7 +3,7 @@ variables:
 
 resources:
   repositories:
-    - repository: bc-at-demo
+    - repository: Zakrzewski-Rafal-Dev/bc-at-demo
       type: github
       endpoint: github.com_Zakrzewski-Rafal-Dev
       name: bc-at-demo
