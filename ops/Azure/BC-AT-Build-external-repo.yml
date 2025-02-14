@@ -3,10 +3,10 @@ variables:
 
 resources:
   repositories:
-    - repository: Zakrzewski-Rafal-Dev/bc-at-demo
+    - repository: bc-at-demo
       type: github
       endpoint: Zakrzewski-Rafal-Dev
-      name: Zakrzewski-Rafal-Dev/bc-at-demo
+      name: bc-at-demo
       ref: main
       trigger:
         branches:
@@ -23,6 +23,6 @@ stages:
     parameters:
       dotnetVersion: 6.0.406
       artifactName: AcceptanceTests
-      repositoryName: Zakrzewski-Rafal-Dev/bc-at-demo
+      repositoryName: bc-at-demo
       poolName: $(poolName)
       buildConfiguration: Release
