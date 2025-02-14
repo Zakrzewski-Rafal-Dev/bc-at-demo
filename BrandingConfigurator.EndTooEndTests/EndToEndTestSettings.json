@@ -1,0 +1,5 @@
+{
+  "WidgetUrl": "#{BC_WIDGET_SCRIPT_URL}",
+  "RunTestOnGrid": "#{BC_RUN_ON_GRID_END_TO_END_TESTS}",
+  "GridUrl": "http://10.52.209.215:80/wd/hub"
+}
