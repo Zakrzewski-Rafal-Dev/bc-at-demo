@@ -7,11 +7,11 @@ resources:
       type: github
       endpoint: github.com_Zakrzewski-Rafal-Dev
       name: bc-at-demo
-      ref: main
+      ref: master
       trigger:
         branches:
           include:
-            - main
+            - master
 
     - repository: templates
       type: git
