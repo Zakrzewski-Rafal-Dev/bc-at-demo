@@ -3,15 +3,15 @@ variables:
 
 resources:
   repositories:
-    - repository: BrandingConfiguratorAcceptanceTests
+    - repository: Zakrzewski-Rafal-Dev/bc-at-demo
       type: github
       endpoint: Zakrzewski-Rafal-Dev
-      name: BrandingConfiguratorAcceptanceTests
-      ref: master
+      name: Zakrzewski-Rafal-Dev/bc-at-demo
+      ref: main
       trigger:
         branches:
           include:
-            - master
+            - main
 
     - repository: templates
       type: git
@@ -23,6 +23,6 @@ stages:
     parameters:
       dotnetVersion: 6.0.406
       artifactName: AcceptanceTests
-      repositoryName: BrandingConfiguratorAcceptanceTests
+      repositoryName: Zakrzewski-Rafal-Dev/bc-at-demo
       poolName: $(poolName)
       buildConfiguration: Release
